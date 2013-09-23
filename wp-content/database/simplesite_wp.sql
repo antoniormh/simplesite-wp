@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 3.5.7
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2013 at 09:14 PM
--- Server version: 5.5.25
--- PHP Version: 5.4.4
+-- Generation Time: Sep 23, 2013 at 09:19 PM
+-- Server version: 5.5.29
+-- PHP Version: 5.4.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -109,7 +109,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=192 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=194 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -117,8 +117,8 @@ CREATE TABLE `wp_options` (
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost', 'yes'),
-(2, 'blogname', 'Antonio&#039;s Simple Site+665892623', 'yes'),
-(3, 'blogdescription', '246549961516519162310', 'yes'),
+(2, 'blogname', 'Antonio&#039;s Simple Site', 'yes'),
+(3, 'blogdescription', '', 'yes'),
 (4, 'users_can_register', '0', 'yes'),
 (5, 'admin_email', 'antoniormh@gmail.com', 'yes'),
 (6, 'start_of_week', '1', 'yes'),
