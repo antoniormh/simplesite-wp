@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2013 at 08:34 PM
+-- Generation Time: Sep 23, 2013 at 09:06 PM
 -- Server version: 5.5.29
 -- PHP Version: 5.4.10
 
@@ -109,7 +109,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=188 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=190 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -118,7 +118,7 @@ CREATE TABLE `wp_options` (
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost', 'yes'),
 (2, 'blogname', 'Antonio&#039;s Simple Site', 'yes'),
-(3, 'blogdescription', 'Just another WordPress site', 'yes'),
+(3, 'blogdescription', '', 'yes'),
 (4, 'users_can_register', '0', 'yes'),
 (5, 'admin_email', 'antoniormh@gmail.com', 'yes'),
 (6, 'start_of_week', '1', 'yes'),
