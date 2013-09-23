@@ -1,0 +1,380 @@
+/* 
+Theme Name: Antonio's Simple Site 
+Theme URI:
+Description: A business directory theme. 
+Version: 1.0 
+Author: Joe Casabona 
+Author URI:
+*/ 
+
+@import url("css/reset.css");
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+/*global*/
+.container{
+    /*border: 3px solid green;*/
+}
+.wrapper{
+    /*border: 2px yellow  solid;*/
+    padding: 0 10px;
+    width: 900px;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+    display: inline-block;
+}
+.right{
+    float: right;
+    display: inline-block;
+}
+.clear{
+    clear: both;
+    zoom:1;
+}
+.clear:after{
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear:both;
+    visibility: hidden;
+}
+#header-container{
+    background-color: #736E6A;
+    height: 70px;
+}
+#header-wrapper{
+    background-color: #736E6A;
+}
+#header-wrapper h1{
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+/*text*/
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+/*headings*/
+h1{
+    font-size: 3em;
+    color: #aaa;
+    font-weight: bold;
+}
+h2{
+    font-size: 2.5em;
+    color: #aaa;
+    font-weight: bold;
+}
+h3{
+    font-size: 2em;
+    color: #aaa;
+    font-weight: bold;
+}
+h4{
+    font-size: 1.75em;
+    color: #aaa;
+    font-weight: bold;
+}
+h5{
+    font-size: 1.5em;
+    color: #aaa;
+    font-weight: bold;
+}
+h6{
+    font-size: 1.25em;
+    color: #aaa;
+    font-weight: bold;
+}
+/*links*/
+a{
+    color: #5B0004;
+}
+a:hover{
+    color: #d69e08;
+
+}
+a:visited{
+    color: #d69e08;
+
+}
+a:active{
+    color: #d69e08;
+
+}
+/*Top Navtion*/
+#header-container .right{
+
+}
+#header-container .right nav{
+    
+
+}
+#header-container .right nav ul{
+    
+}
+#header-container .right nav ul li{
+    
+    display: inline-block;
+
+}
+#header-container .right nav ul li a{
+    color: #fff;
+    display: inline-block;
+}
+#main-nav{
+    margin-top: 30px;
+    
+
+}
+#main-nav li{
+    margin: 5px;
+}
+
+
+/*Main content*/
+#conten-wrapper{
+    position: relative;
+}
+#main-content-wrapper{
+    width: 75%;
+}
+.main-content-sec{
+    margin: 15px 0 15px 0;
+
+    overflow: hidden;
+    /*padding: 0 0 0 15px;*/
+    
+    width: 75%;
+}
+section.main-content-sec p,section.main-content-sec h4{
+     margin-top: 10px;
+    padding: 0 0 0 15px;
+}
+section.main-content-sec li{
+    margin-top: 10px;
+}
+.main-content-sec ul{
+    list-style-type: circle;
+    font-size: .8em;
+    font-style: italic;
+    margin-left: 25px;
+}
+.right-column-main{
+    position: relative;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 10px;
+    /*margin:30px 10px 10px;*/
+    width: 15%;
+    height: auto;
+}
+
+.right-column-main.profile-pic img{
+    width: 100%;
+    height: auto;
+     border: solid;
+}
+
+
+/*secondary Nav*/
+#secondary-nav{
+    width: 25%;
+}
+#secondary-nav{
+    margin-top: 20px; 
+}
+#secondary-nav li{
+    margin: 10px;
+}
+/*footer*/
+#footer{
+    background-color: #736E6A;
+    /*height: 50px;*/
+}
+#footer .wrapper{
+    text-align: center;
+    background-color: #736E6A;
+}
+#footer .wrapper h5{
+    color: #fff;
+    /*line-height: 50px;*/
+    padding: 20px 0px;
+}
+
+/*media queries*/
+/*large screen*/
+@media screen and (max-width: 1680px){
+ 
+}
+/*desktop*/
+@media screen and (max-width: 1366px){
+ 
+}
+/*laptop*/
+@media screen and (max-width:1280px){
+ 
+}
+/*small laptop*/
+@media screen and (max-width:1240px){
+ 
+}
+/*large tablet landscape*/
+@media screen and (max-width: 1024px){
+ 
+}
+@media screen and (max-width: 900px){
+.wrapper {
+    width: 800px;
+    }
+}
+/*medium tablet landscape*/
+@media screen and (max-width:800px){
+     .wrapper {
+    width: 700px;
+    }
+}
+/*small tablet */
+@media screen and (max-width: 768px){
+    #footer{
+        background-color: #736E6A;
+        height: auto;
+    }
+    #footer .wrapper h5{
+        color: #fff;
+        line-height: auto;
+        display: block;
+    }
+    #header-container{
+        height: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .wrapper{
+        /*border: 2px yellow  solid;*/
+        padding: 0 ;
+        width: 90%;
+        overflow: hidden;
+    }
+    .right-column-main{
+    position: relative;
+    float: none;
+    right: 0;
+    top: 0px;
+    clear: both;
+    /*margin:30px 10px 10px 10px;*/
+    margin: 0;
+    width: 100%;
+    height: auto;
+    /*text-align:  center;*/
+
+}
+.right-column-main.profile-pic img{
+    width: 200px;
+    margin: auto;
+    margin: 10px auto 10px auto;
+    clear: both;
+    display: block;
+   /* overflow: hidden;*/
+}
+#conten-wrapper{
+    position: relative;
+
+}
+#main-content-wrapper{
+    width: 95%;
+    float: right;
+}
+.main-content-sec{
+    margin: 15px 0 15px 0;
+    overflow: hidden;
+    /*padding: 0 0 0 15px;*/
+    width: 90%;
+}
+section.main-content-sec p,section.main-content-sec h4{
+     margin-top: 10px;
+    padding: 0 0 0 15px;
+}
+section.main-content-sec li{
+    margin-top: 10px;
+
+}
+.main-content-sec ul{
+    list-style-type: circle;
+    font-size: .8em;
+    font-style: italic;
+    margin-left: 25px;
+}
+#secondary-nav{
+    width: 90%;
+    margin: 0 auto;
+}
+#secondary-nav h2 {
+    text-align: center;
+}
+#secondary-nav li{
+    margin: auto;
+    margin: 10px;
+    /*border: red solid;*/
+    text-align: center;
+}
+/*Top Navtion*/
+#header-container .right{
+    width: 100%;
+    float: none;
+}
+#main-nav{
+    width: 200px;
+    margin: 30px auto 5px auto;
+    display: block;
+
+}
+}
+/*small tablet landscape*/
+@media screen and (max-width: 640px){
+ 
+}
+/*mobile landscape*/
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 2.75em;
+        color: #aaa;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 2.25em;
+        color: #aaa;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 1.75em;
+        color: #aaa;
+        font-weight: bold;
+    }
+    h4{
+        font-size: 1.5em;
+        color: #aaa;
+        font-weight: bold;
+    }
+    h5{
+        font-size: 1.25em;
+        color: #aaa;
+        font-weight: bold;
+    }
+    h6{
+        font-size: 1.15em;
+        color: #aaa;
+        font-weight: bold;
+    }
+
+}
+/*mobile protrait*/
+@media screen and (max-width: 320px){
+ 
+
+
+}
