@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.7
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2013 at 09:06 PM
--- Server version: 5.5.29
--- PHP Version: 5.4.10
+-- Generation Time: Sep 23, 2013 at 09:14 PM
+-- Server version: 5.5.25
+-- PHP Version: 5.4.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -109,7 +109,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=190 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=192 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -117,8 +117,8 @@ CREATE TABLE `wp_options` (
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://localhost', 'yes'),
-(2, 'blogname', 'Antonio&#039;s Simple Site', 'yes'),
-(3, 'blogdescription', '', 'yes'),
+(2, 'blogname', 'Antonio&#039;s Simple Site+665892623', 'yes'),
+(3, 'blogdescription', '246549961516519162310', 'yes'),
 (4, 'users_can_register', '0', 'yes'),
 (5, 'admin_email', 'antoniormh@gmail.com', 'yes'),
 (6, 'start_of_week', '1', 'yes'),
@@ -432,7 +432,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `wp_usermeta`
@@ -452,7 +452,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', 'wp330_toolbar,wp330_saving_widgets,wp340_choose_image_from_library,wp340_customize_current_theme_link,wp350_media,wp360_revisions,wp360_locks'),
 (13, 1, 'show_welcome_panel', '0'),
-(14, 1, 'wp_dashboard_quick_press_last_post_id', '3');
+(14, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
+(15, 1, 'wp_user-settings', 'libraryContent=browse&imgsize=full&unfold=1&editor=html&hidetb=1&wplink=0&widgets_access=off&urlbutton=none&uploader=1'),
+(16, 1, 'wp_user-settings-time', '1379963464');
 
 -- --------------------------------------------------------
 
