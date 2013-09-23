@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 3.5.7
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 23, 2013 at 09:27 PM
--- Server version: 5.5.25
--- PHP Version: 5.4.4
+-- Generation Time: Sep 23, 2013 at 09:29 PM
+-- Server version: 5.5.29
+-- PHP Version: 5.4.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -198,7 +198,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (80, 'comment_order', 'asc', 'yes'),
 (81, 'sticky_posts', 'a:0:{}', 'yes'),
 (82, 'widget_categories', 'a:2:{i:2;a:4:{s:5:"title";s:0:"";s:5:"count";i:0;s:12:"hierarchical";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
-(83, 'widget_text', 'a:2:{i:2;a:3:{s:5:"title";s:14:"text by edgar ";s:4:"text";s:1768:"asldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdfasldkjfalksdfjasldkjfalkdjfl;akdsfalkjdflkajdsflkajdsflkajsdflk;ajdf";s:6:"filter";b:0;}s:12:"_multiwidget";i:1;}', 'yes'),
+(83, 'widget_text', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (84, 'widget_rss', 'a:0:{}', 'yes'),
 (85, 'uninstall_plugins', 'a:0:{}', 'no'),
 (86, 'timezone_string', 'America/Los_Angeles', 'yes'),
@@ -213,7 +213,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (95, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}', 'yes'),
 (96, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (97, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
-(98, 'sidebars_widgets', 'a:4:{s:19:"wp_inactive_widgets";a:5:{i:0;s:14:"recent-posts-2";i:1;s:12:"categories-2";i:2;s:6:"meta-2";i:3;s:10:"archives-2";i:4;s:8:"search-2";}s:9:"sidebar-1";a:1:{i:0;s:6:"text-2";}s:9:"sidebar-2";a:0:{}s:13:"array_version";i:3;}', 'yes'),
+(98, 'sidebars_widgets', 'a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:5:{i:0;s:10:"archives-2";i:1;s:14:"recent-posts-2";i:2;s:8:"search-2";i:3;s:12:"categories-2";i:4;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:13:"array_version";i:3;}', 'yes'),
 (99, 'cron', 'a:4:{i:1379997664;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1380002400;a:1:{s:19:"hmbkp_schedule_hook";a:2:{s:32:"887abd106b36605fbb285d0dec9f47ac";a:3:{s:8:"schedule";s:11:"hmbkp_daily";s:4:"args";a:1:{s:2:"id";s:9:"default-1";}s:8:"interval";i:86400;}s:32:"61a45f8e0e711228d9f0aa04271d0a05";a:3:{s:8:"schedule";s:12:"hmbkp_weekly";s:4:"args";a:1:{s:2:"id";s:9:"default-2";}s:8:"interval";i:604800;}}}i:1380040914;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (101, '_site_transient_update_core', 'O:8:"stdClass":3:{s:7:"updates";a:1:{i:0;O:8:"stdClass":9:{s:8:"response";s:6:"latest";s:8:"download";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":4:{s:4:"full";s:40:"http://wordpress.org/wordpress-3.6.1.zip";s:10:"no_content";s:51:"http://wordpress.org/wordpress-3.6.1-no-content.zip";s:11:"new_bundled";s:52:"http://wordpress.org/wordpress-3.6.1-new-bundled.zip";s:7:"partial";b:0;}s:7:"current";s:5:"3.6.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.6";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1379954504;s:15:"version_checked";s:5:"3.6.1";}', 'yes'),
 (105, '_site_transient_update_themes', 'O:8:"stdClass":3:{s:12:"last_checked";i:1379964279;s:7:"checked";a:1:{s:14:"twentythirteen";s:3:"1.0";}s:8:"response";a:0:{}}', 'yes'),
