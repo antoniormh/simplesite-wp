@@ -9,3 +9,6 @@ Author URI:
 
 @import url("css/reset.css");
 @import url("css/stylesheet.css");
+body{
+	background: red;
+}
