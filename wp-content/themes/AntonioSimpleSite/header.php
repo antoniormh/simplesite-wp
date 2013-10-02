@@ -29,17 +29,18 @@ css" media="screen, projection" />
 		<div class="column six left">
 			<header >
 				<!-- <h1>Antonio's Simple Site</h1> -->
-				<img src="./images/logo.png" alt="logo.png" id="logo">
+				<img src="/images/logo.png" alt="logo.png" width="180" heigth="65" id="logo"/>
 			</header>	
 		</div>
 		<div class="column six right">
-			<nav id="main-nav" class="align-right">
+			<!-- <nav id="main-nav" class="align-right">
 				<ul>
 					<li><a href="/index.html">Home</a></li>
 					<li><a href="/about.html">About</a></li>
 					<li><a href="/contact.html">Contact</a></li>
 				</ul>
-			</nav>		
+			</nav> -->
+			<?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' ,'container_class' => 'align-right','container_id' => 'main-nav')); ?>		
 		</div>
 		<div class="clear"></div>		
 	</div>

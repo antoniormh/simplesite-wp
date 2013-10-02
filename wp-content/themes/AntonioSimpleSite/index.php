@@ -1,13 +1,19 @@
 <?php get_header(); ?>
 <!-- Hero -->
-<div id="hero-pic" class="container">
-	<div class="wrapper">
-		<div id="hero-text">
-			<h2>Lorem ipsum dolor sit amet</h2>
-			<h3>Nulla venenatis diam ut convallis</h3>
+<?php
+	global $wp_query;
+	$postid = $wp_query->post->ID;	
+?>
+<?php if ( get_post_meta($postid, 'hero', true) ) : ?>
+	<div id="hero-pic" class="container">
+		<div class="wrapper">
+			<div id="hero-text">
+				<?php  echo '<h3>'.get_post_meta($postid, 'hero', true).'</h3>';?>
+			</div>
 		</div>
 	</div>
-</div>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
 <!-- Heror -->
 <!-- Main Content & Nav container -->
 <div id="content-container" class="container p40TB">

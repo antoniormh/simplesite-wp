@@ -1,13 +1,19 @@
 <?php get_header(); ?>
 <!-- Hero -->
-<div id="hero-pic" class="container">
-	<div class="wrapper">
-		<div id="hero-text">
-			<h2>Lorem ipsum dolor sit amet</h2>
-			<h3>Nulla venenatis diam ut convallis</h3>
+<?php
+	global $wp_query;
+	$postid = $wp_query->post->ID;	
+?>
+<?php if ( get_post_meta($postid, 'hero', true) ) : ?>
+	<div id="hero-pic" class="container">
+		<div class="wrapper">
+			<div id="hero-text">
+				<?php  echo '<h3>'.get_post_meta($postid, 'hero', true).'</h3>';?>
+			</div>
 		</div>
 	</div>
-</div>
+<?php endif; ?>
+<?php wp_reset_query(); ?>
 <!-- Heror -->
 <!-- Main Content & Nav container -->
 <div id="content-container" class="container p40TB">
@@ -15,17 +21,19 @@
 	<!-- Main Content & Nav wrapper -->
 	<div id="conten-wrapper" class="wrapper">
 		<!-- Main Content -->
-		<div  id="main-content-wrapper" class="wrapper right p20TB">
-			<article>
-				<div class="row">
-					<h3><?php echo get_the_title(); ?></h3>					
+		<div  id="main-content-wrapper" class="wrapper left p20TB">
+			<div class="row">
+					<h3 class="title"><?php echo get_the_title(); ?></h3>					
 				</div>
-				<?php if ( have_posts() ) : while ( have_posts() ) : 
-					the_post();
-					the_content();
-				endwhile; else: ?>
-					<p>Sorry, no posts matched your criteria.</p>
-				<?php endif; ?>
+			<article>
+				<?php get_sidebar(); ?>
+				<div class="container left column eight">
+					<?php if ( have_posts() ) : while ( have_posts() ) : 
+						the_post();
+						the_content();
+					endwhile; else: ?>
+						<p>Sorry, no posts matched your criteria.</p>
+					<?php endif; ?>
 				<!-- id="first-half-body"  id="second-half-body"-->
 				</div>
 			</article>
