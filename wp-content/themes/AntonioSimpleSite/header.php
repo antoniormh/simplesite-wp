@@ -29,7 +29,7 @@ css" media="screen, projection" />
 		<div class="column six left">
 			<header >
 				<!-- <h1>Antonio's Simple Site</h1> -->
-				<img src="/images/logo.png" alt="logo.png" width="180" heigth="65" id="logo"/>
+				<img src="images/logo.png" alt="logo.png" width="180" heigth="65" id="logo"/>
 			</header>	
 		</div>
 		<div class="column six right">
